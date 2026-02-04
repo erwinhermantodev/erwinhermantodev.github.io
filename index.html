@@ -1,680 +1,896 @@
-<!doctype html>
-<html lang="zxx">
-
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- color of address bar in mobile browser -->
-  <meta name="theme-color" content="#2B2B35">
-  <!-- favicon  -->
-  <link rel="shortcut icon" href="img/thumbnail.ico" type="image/x-icon">
-  <!-- bootstrap css -->
-  <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
-  <!-- font awesome css -->
-  <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
-  <!-- swiper css -->
-  <link rel="stylesheet" href="css/plugins/swiper.min.css">
-  <!-- fancybox css -->
-  <link rel="stylesheet" href="css/plugins/fancybox.min.css">
-  <!-- main css -->
-  <link rel="stylesheet" href="css/style.css">
-
-  <title>Erwin Hermanto</title>
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Erwin Hermanto | Software Engineer Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0&display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --neo-yellow: #FFFF00;
+            --neo-white: #F0F0F0;
+            --neo-black: #000000;
+            --neo-shadow: 8px 8px 0px 0px #000000;
+            --neo-shadow-sm: 4px 4px 0px 0px #000000;
+        }
+        body {
+            background-color: #E5E5E5;
+            font-family: 'Space Mono', monospace;
+        }
+        h1, h2, h3, h4, .heading-font {
+            font-family: 'Archivo Black', sans-serif;
+            text-transform: uppercase;
+        }
+        .brutalist-card {
+            background-color: var(--neo-white);
+            border: 4px solid var(--neo-black);
+            box-shadow: var(--neo-shadow);
+            transition: all 0.1s;
+        }
+        .brutalist-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 10px 10px 0px 0px #000000;
+        }
+        .brutalist-yellow {
+            background-color: var(--neo-yellow) !important;
+        }
+        .sticker {
+            background-color: white;
+            border: 3px solid black;
+            padding: 4px 12px;
+            font-weight: 800;
+            display: inline-block;
+            box-shadow: 3px 3px 0px 0px #000000;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 48;
+            color: black;
+            font-size: 32px !important;
+        }
+        .skill-bar-container {
+            height: 24px;
+            border: 3px solid black;
+            background: white;
+        }
+        .skill-bar-fill {
+            height: 100%;
+            background: black;
+        }
+        .project-card {
+            position: relative;
+            overflow: hidden;
+        }
+        .project-tech {
+            font-size: 0.65rem;
+            padding: 2px 8px;
+        }
+        .timeline-dot {
+            width: 16px;
+            height: 16px;
+            border: 4px solid black;
+            background: white;
+            box-shadow: 2px 2px 0px 0px #000000;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        section {
+            scroll-margin-top: 100px;
+        }
+    </style>
 </head>
-
-<body>
-
-  <!-- app -->
-  <div class="art-app">
-
-    <!-- mobile top bar -->
-    <div class="art-mobile-top-bar"></div>
-
-    <!-- app wrapper -->
-    <div class="art-app-wrapper">
-
-      <!-- app container end -->
-      <div class="art-app-container">
-
-        <!-- info bar -->
-        <div class="art-info-bar">
-
-          <!-- menu bar frame -->
-          <div class="art-info-bar-frame">
-
-            <!-- info bar header -->
-            <div class="art-info-bar-header">
-              <!-- info bar button -->
-              <a class="art-info-bar-btn" href="#.">
-                <!-- icon -->
-                <i class="fas fa-ellipsis-v"></i>
-              </a>
-              <!-- info bar button end -->
-            </div>
-            <!-- info bar header end -->
-
-            <!-- info bar header -->
-            <div class="art-header">
-              <!-- avatar -->
-              <div class="art-avatar">
-                <a data-fancybox="avatar" href="img/pp.jpg" class="art-avatar-curtain">
-                  <img src="img/pp.jpg" alt="avatar">
-                  <i class="fas fa-expand"></i>
-                </a>
-                <!-- available -->
-                <div class="art-lamp-light">
-                  <!-- add class 'art-not-available' if not available-->
-                  <div class="art-available-lamp"></div>
-                </div>
-              </div>
-              <!-- avatar end -->
-              <!-- name -->
-              <h5 class="art-name mb-10"><a href="/home.html">Erwin Hermanto</a></h5>
-              <!-- post -->
-              <div class="art-sm-text">Fullstack Engineer <br>Senior Software Engineer </div>
-            </div>
-            <!-- info bar header end -->
-
-            <!-- scroll frame -->
-            <div id="scrollbar2" class="art-scroll-frame">
-
-              <!-- info bar about -->
-              <div class="art-table p-15-15">
-                <!-- about text -->
-                <ul>
-                  <!-- country -->
-                  <li>
-                    <h6>Residence:</h6><span>Indonesia</span>
-                  </li>
-                  <!-- city -->
-                  <li>
-                    <h6>City:</h6><span>Bandung</span>
-                  </li>
-                  <!-- age -->
-                  <li>
-                    <h6>Age:</h6><span id="age"></span>
-                  </li>
-                </ul>
-              </div>
-              <!-- info bar about end -->
-
-              <!-- divider -->
-              <div class="art-ls-divider"></div>
-
-              <!-- language skills -->
-              <div class="art-lang-skills p-30-15">
-
-                <!-- skill -->
-                <div class="art-lang-skills-item">
-                  <div id="circleprog1" class="art-cirkle-progress"></div>
-                  <!-- title -->
-                  <h6>English</h6>
-                </div>
-                <!-- skill end -->
-
-                <!-- skill -->
-                <div class="art-lang-skills-item">
-                  <!-- <div id="circleprog2" class="art-cirkle-progress"></div> -->
-                  <!-- title -->
-                  <!-- <h6>English</h6> -->
-                </div>
-                <!-- skill end -->
-
-                <!-- skill -->
-                <!-- <div class="art-lang-skills-item">
-                  <div id="circleprog3" class="art-cirkle-progress"></div> -->
-                  <!-- title -->
-                  <!-- <h6>Spanish</h6>
-                </div> -->
-                <!-- skill end -->
-
-              </div>
-              <!-- language skills end -->
-
-              <!-- divider -->
-              <div class="art-ls-divider"></div>
-
-              <!-- hard skills -->
-              <div class="art-hard-skills p-30-15">
-
-                <!-- skill -->
-                <div class="art-hard-skills-item">
-                  <div class="art-skill-heading">
-                    <!-- title -->
-                    <h6>Golang </h6>
-                  </div>
-                  <!-- progressbar frame -->
-                  <div class="art-line-progress">
-                    <!-- progressbar -->
-                    <div id="lineprog1"></div>
-                  </div>
-                  <!-- progressbar frame end -->
-                </div>
-                <!-- skill end -->
-
-                <!-- skill -->
-                <div class="art-hard-skills-item">
-                  <div class="art-skill-heading">
-                    <!-- title -->
-                    <h6>Nodejs</h6>
-                  </div>
-                  <!-- progressbar frame -->
-                  <div class="art-line-progress">
-                    <!-- progressbar -->
-                    <div id="lineprog2"></div>
-                  </div>
-                  <!-- progressbar frame end -->
-                </div>
-                <!-- skill end -->
-
-                <!-- skill -->
-                <div class="art-hard-skills-item">
-                  <div class="art-skill-heading">
-                    <!-- title -->
-                    <h6>Php</h6>
-                  </div>
-                  <!-- progressbar frame -->
-                  <div class="art-line-progress">
-                    <!-- progressbar -->
-                    <div id="lineprog3"></div>
-                  </div>
-                  <!-- progressbar frame end -->
-                </div>
-                <!-- skill end -->
-
-                <!-- skill -->
-                <div class="art-hard-skills-item">
-                  <div class="art-skill-heading">
-                    <!-- title -->
-                    <h6>Mysql</h6>
-                  </div>
-                  <!-- progressbar frame -->
-                  <div class="art-line-progress">
-                    <!-- progressbar -->
-                    <div id="lineprog4"></div>
-                  </div>
-                  <!-- progressbar frame end -->
-                </div>
-                <!-- skill end -->
-
-                <!-- skill -->
-                <div class="art-hard-skills-item">
-                  <div class="art-skill-heading">
-                    <!-- title -->
-                    <h6>Postgres</h6>
-                  </div>
-                  <!-- progressbar frame -->
-                  <div class="art-line-progress">
-                    <!-- progressbar -->
-                    <div id="lineprog5"></div>
-                  </div>
-                  <!-- progressbar frame end -->
-                </div>
-                <!-- skill end -->
-
-              </div>
-              <!-- language skills end -->
-
-              <!-- divider -->
-              <div class="art-ls-divider"></div>
-
-              <!-- knowledge list -->
-              <ul class="art-knowledge-list p-15-0">
-                <!-- list item -->
-                <li>Docker</li>
-                <!-- list item -->
-                <li>Elasticsearch</li>
-                <!-- list item -->
-                <li>Kubernetes</li>
-                <!-- list item -->
-                <li>CI / CD</li>
-                <!-- list item -->
-                <li>GIT knowledge</li>
-              </ul>
-              <!-- knowledge list end -->
-
-              <!-- divider -->
-              <div class="art-ls-divider"></div>
-
-              <!-- links frame -->
-              <div class="art-links-frame p-15-15">
-
-                <!-- download cv button -->
-                <!-- <a href="files/cv.txt" class="art-link" download>Download cv <i class="fas fa-download"></i></a> -->
-
-              </div>
-              <!-- links frame end -->
-
-            </div>
-            <!-- scroll frame end -->
-
-            <!-- sidebar social -->
-            <div class="art-ls-social">
-              <!-- social link -->
-              <a href="#." target="_blank"><i class="far fa-circle"></i></a>
-              <!-- social link -->
-              <a href="#." target="_blank"><i class="far fa-circle"></i></a>
-              <!-- social link -->
-              <a href="#." target="_blank"><i class="far fa-circle"></i></a>
-              <!-- social link -->
-              <a href="#." target="_blank"><i class="far fa-circle"></i></a>
-              <!-- social link -->
-              <a href="#." target="_blank"><i class="far fa-circle"></i></a>
-            </div>
-            <!-- sidebar social end -->
-
-          </div>
-          <!-- menu bar frame end -->
-
-        </div>
-        <!-- info bar end -->
-
-        <!-- content -->
-        <div class="art-content">
-
-          <!-- curtain -->
-          <div class="art-curtain"></div>
-
-          <!-- top background -->
-          <div class="art-top-bg" style="background-image: url(img/bg.jpg)">
-            <!-- overlay -->
-            <div class="art-top-bg-overlay"></div>
-            <!-- overlay end -->
-          </div>
-          <!-- top background end -->
-
-          <!-- swup container -->
-          <div class="transition-fade" id="swup">
-
-            <!-- scroll frame -->
-            <div id="scrollbar" class="art-scroll-frame">
-
-              <!-- container -->
-              <div class="container-fluid">
-
-                <!-- row -->
-                <div class="row p-60-0 p-lg-30-0 p-md-15-0">
-                  <!-- col -->
-                  <div class="col-lg-12">
-
-                    <!-- banner -->
-                    <div class="art-a art-banner" style="background-image: url(img/bg.jpg)">
-                      <!-- banner back -->
-                      <div class="art-banner-back"></div>
-                      <!-- banner dec -->
-                      <div class="art-banner-dec"></div>
-                      <!-- banner overlay -->
-                      <div class="art-banner-overlay">
-                        <!-- main title -->
-                        <div class="art-banner-title">
-                          <!-- title -->
-                          <h1 class="mb-15">Discover my Amazing <br>Tech Space!</h1>
-                          <!-- suptitle -->
-                          <div class="art-lg-text art-code mb-25">&lt;<i>code</i>&gt; I build <span class="txt-rotate" data-period="2000"
-                              data-rotate='[ "web interfaces.", "backend microservice.", "sofware architecture.", "ios and android applications." ]'></span>&lt;/<i>code</i>&gt;</div>
-                          <div class="art-buttons-frame">
-                            <!-- button -->
-                            <!-- <a href="/portfolio-3-col-masonry.html" class="art-btn art-btn-md"><span>Explore now</span></a> -->
-                          </div>
-                        </div>
-                        <!-- main title end -->
-                        <!-- photo -->
-                        <img src="img/face-2.png" class="art-banner-photo" alt="Your Name">
-                      </div>
-                      <!-- banner overlay end -->
-                    </div>
-                    <!-- banner end -->
-
-                  </div>
-                  <!-- col end -->
-                </div>
-                <!-- row end -->
-
-              </div>
-              <!-- container end -->
-
-              <!-- container -->
-              <div class="container-fluid">
-
-                <!-- row -->
-                <div class="row p-30-0">
-
-                  <!-- col -->
-                  <div class="col-md-3 col-6">
-
-                    <!-- couner frame -->
-                    <div class="art-counter-frame">
-                      <!-- counter -->
-                      <div class="art-counter-box">
-                        <!-- counter number -->
-                        <span class="art-counter">7</span><span class="art-counter-plus">+</span>
-                      </div>
-                      <!-- counter end -->
-                      <!-- title -->
-                      <h6>Years Experience</h6>
-                    </div>
-                    <!-- couner frame end -->
-
-                  </div>
-                  <!-- col end -->
-
-                  <!-- col -->
-                  <div class="col-md-3 col-6">
-
-                    <!-- couner frame -->
-                    <div class="art-counter-frame">
-                      <!-- counter -->
-                      <div class="art-counter-box">
-                        <!-- counter number -->
-                        <!-- <span class="art-counter">143</span> -->
-                      </div>
-                      <!-- counter end -->
-                      <!-- title -->
-                      <!-- <h6>Completed Projects</h6> -->
-                    </div>
-                    <!-- couner frame end -->
-
-                  </div>
-                  <!-- col end -->
-
-                  <!-- col -->
-                  <div class="col-md-3 col-6">
-
-                    <!-- couner frame -->
-                    <div class="art-counter-frame">
-                      <!-- counter -->
-                      <div class="art-counter-box">
-                        <!-- counter number -->
-                        <!-- <span class="art-counter">114</span> -->
-                      </div>
-                      <!-- counter end -->
-                      <!-- title -->
-                      <!-- <h6>Happy Customers</h6> -->
-                    </div>
-                    <!-- couner frame end -->
-
-                  </div>
-                  <!-- col end -->
-
-                  <!-- col -->
-                  <div class="col-md-3 col-6">
-
-                    <!-- couner frame -->
-                    <div class="art-counter-frame">
-                      <!-- counter -->
-                      <div class="art-counter-box">
-                        <!-- counter number -->
-                        <!-- <span class="art-counter">20</span><span class="art-counter-plus">+</span> -->
-                      </div>
-                      <!-- counter end -->
-                      <!-- title -->
-                      <!-- <h6>Honors and Awards</h6> -->
-                    </div>
-                    <!-- couner frame end -->
-
-                  </div>
-                  <!-- col end -->
-
-                </div>
-                <!-- row end -->
-
-              </div>
-              <!-- container end -->
-
-              <!-- container -->
-              <div class="container-fluid">
-
-                <!-- row -->
-                <div class="row">
-
-                  <!-- col -->
-                  <div class="col-lg-12">
-
-                    <!-- section title -->
-                    <div class="art-section-title">
-                      <!-- title frame -->
-                      <div class="art-title-frame">
-                        <!-- title -->
-                        <h4>My Services</h4>
-                      </div>
-                      <!-- title frame end -->
-                    </div>
-                    <!-- section title end -->
-
-                  </div>
-                  <!-- col end -->
-
-                  <!-- col -->
-                  <div class="col-lg-4 col-md-6">
-
-                    <!-- service -->
-                    <div class="art-a art-service-icon-box">
-                      <!-- service content -->
-                      <div class="art-service-ib-content">
-                        <!-- title -->
-                        <h5 class="mb-15">Web Development</h5>
-                        <!-- text -->
-                        <div class="mb-15">Create web application with various technology for private or company businees needs or just for profile of company.</div>
-                        <!-- button -->
-                        <!-- <div class="art-buttons-frame"><a href="/contact.html" class="art-link art-color-link art-w-chevron">Order now</a></div> -->
-                      </div>
-                      <!-- service content end -->
-                    </div>
-                    <!-- service end -->
-
-                  </div>
-                  <!-- col end -->
-
-                  <!-- col -->
-                  <div class="col-lg-4 col-md-6">
-
-                    <!-- service -->
-                    <div class="art-a art-service-icon-box">
-                      <!-- service content -->
-                      <div class="art-service-ib-content">
-                        <!-- title -->
-                        <h5 class="mb-15">Mobile Development</h5>
-                        <!-- text -->
-                        <div class="mb-15">Create mobile application with various technology for help your businees needs.</div>
-                        <!-- button -->
-                        <!-- <div class="art-buttons-frame"><a href="/contact.html" class="art-link art-color-link art-w-chevron">Order now</a></div> -->
-                      </div>
-                      <!-- service content end -->
-                    </div>
-                    <!-- service end -->
-
-                  </div>
-                  <!-- col end -->
-
-                  <!-- col -->
-                  <div class="col-lg-4 col-md-6">
-
-                    <!-- service -->
-                    <div class="art-a art-service-icon-box">
-                      <!-- service content -->
-                      <div class="art-service-ib-content">
-                        <!-- title -->
-                        <h5 class="mb-15">Backend Development</h5>
-                        <!-- text -->
-                        <div class="mb-15">Create application with various technology for help your businees needs in backend side.</div>
-                        <!-- button -->
-                        <!-- <div class="art-buttons-frame"><a href="/contact.html" class="art-link art-color-link art-w-chevron">Order now</a></div> -->
-                      </div>
-                      <!-- service content end -->
-                    </div>
-                    <!-- service end -->
-
-                  </div>
-                  <!-- col end -->
-
-                  <!-- col -->
-                  <div class="col-lg-4 col-md-6">
-
-                    <!-- service -->
-                    <div class="art-a art-service-icon-box">
-                      <!-- service content -->
-                      <div class="art-service-ib-content">
-                        <!-- title -->
-                        <h5 class="mb-15">Software architecture</h5>
-                        <!-- text -->
-                        <div class="mb-15">Create design architecture of technology for your businees application.</div>
-                        <!-- button -->
-                        <!-- <div class="art-buttons-frame"><a href="/contact.html" class="art-link art-color-link art-w-chevron">Order now</a></div> -->
-                      </div>
-                      <!-- service content end -->
-                    </div>
-                    <!-- service end -->
-
-                  </div>
-                  <!-- col end -->
-
-                </div>
-                <!-- row end -->
-
-              </div>
-              <!-- container end -->
-
-
-              <!-- container -->
-              <div class="container-fluid">
-
-                <!-- footer -->
-                <footer>
-                  <!-- copyright -->
-                  <div>© 2023 Erwin Hermanto</div>
-                  <!-- author ( Please! Do not delete it. You are awesome! :) -->
-                  <div>Template author:&#160; <a href="https://themeforest.net/user/millerdigitaldesign" target="_blank">Nazar Miller</a></div>
-                </footer>
-                <!-- footer end -->
-
-              </div>
-              <!-- container end -->
-
-            </div>
-            <!-- scroll frame end -->
-
-          </div>
-          <!-- swup container end -->
-
-        </div>
-        <!-- content end -->
-
-        <!-- menu bar -->
-        <div class="art-menu-bar">
-
-          <!-- menu bar frame -->
-          <div class="art-menu-bar-frame">
-
-            <!-- menu bar header -->
-            <div class="art-menu-bar-header">
-              <!-- menu bar button -->
-              <a class="art-menu-bar-btn" href="#.">
-                <!-- icon -->
-                <span></span>
-              </a>
-              <!-- menu bar button end -->
-            </div>
-            <!-- menu bar header end -->
-
-            <!-- current page title -->
-            <div class="art-current-page"></div>
-            <!-- current page title end -->
-
-            <!-- scroll frame -->
-            <div class="art-scroll-frame">
-
-              <!-- menu -->
-              <nav id="swupMenu">
-                <!-- menu list -->
-                <ul class="main-menu">
-                  <!-- menu item -->
-                  <li class="menu-item current-menu-item"><a href="/home.html">Home</a></li>
-                </ul>
-                <!-- menu list end -->
-              </nav>
-              <!-- menu end -->
-
-              <!-- language change -->
-              <ul class="art-language-change">
-                <!-- language item -->
-                <!-- <li><a href="#.">FR</a></li> -->
-                <!-- language item -->
-                <li class="art-active-lang"><a href="#.">EN</a></li>
-              </ul>
-              <!-- language change end -->
-
-            </div>
-            <!-- scroll frame end -->
-
-          </div>
-          <!-- menu bar frame -->
-
-        </div>
-        <!-- menu bar end -->
-
-      </div>
-      <!-- app container end -->
-
-    </div>
-    <!-- app wrapper end -->
-
-    <!-- preloader -->
-    <div class="art-preloader">
-      <!-- preloader content -->
-      <div class="art-preloader-content">
-        <!-- title -->
-        <h4>Erwin Hermanto</h4>
-        <!-- progressbar -->
-        <div id="preloader" class="art-preloader-load"></div>
-      </div>
-      <!-- preloader content end -->
-    </div>
-    <!-- preloader end -->
-
-  </div>
-  <!-- app end -->
-
-  <!-- jquery js -->
-  <script src="js/plugins/jquery.min.js"></script>
-  <!-- anime js -->
-  <script src="js/plugins/anime.min.js"></script>
-  <!-- swiper js -->
-  <script src="js/plugins/swiper.min.js"></script>
-  <!-- progressbar js -->
-  <script src="js/plugins/progressbar.min.js"></script>
-  <!-- smooth scrollbar js -->
-  <script src="js/plugins/smooth-scrollbar.min.js"></script>
-  <!-- overscroll js -->
-  <script src="js/plugins/overscroll.min.js"></script>
-  <!-- typing js -->
-  <script src="js/plugins/typing.min.js"></script>
-  <!-- isotope js -->
-  <script src="js/plugins/isotope.min.js"></script>
-  <!-- fancybox js -->
-  <script src="js/plugins/fancybox.min.js"></script>
-  <!-- swup js -->
-  <script src="js/plugins/swup.min.js"></script>
-
-  <!-- main js -->
-  <script src="js/main.js"></script>
-
-  <script>
-    const timeElapsed = Date.now();
-    const today = new Date(timeElapsed);
-    var date1 = new Date("06/30/1993");
-    var date2 = today;
-      
-    // To calculate the time difference of two dates
-    var Difference_In_Time = today - date1.getTime();
-      
-    // To calculate the no. of days between two dates
-    var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24 * 365);
-
-    document.getElementById("age").textContent = Math.round(Difference_In_Days);
-
-  </script>
-
-</body>
-
-</html>
+<body class="p-4 lg:p-8">
+<!-- Navigation -->
+<nav class="fixed left-6 top-6 h-[calc(100vh-48px)] w-20 hidden lg:flex flex-col items-center py-8 brutalist-card brutalist-yellow z-50">
+<div class="mb-12">
+<div class="w-12 h-12 border-4 border-black bg-white flex items-center justify-center font-black text-xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">EH</div>
+</div>
+<div class="flex flex-col gap-10 flex-1">
+<a class="hover:scale-110 transition-transform" href="#home"><span class="material-symbols-outlined">home</span></a>
+<a class="hover:scale-110 transition-transform" href="#experience"><span class="material-symbols-outlined">work</span></a>
+<a class="hover:scale-110 transition-transform" href="#projects"><span class="material-symbols-outlined">grid_view</span></a>
+<a class="hover:scale-110 transition-transform" href="#skills"><span class="material-symbols-outlined">construction</span></a>
+<a class="hover:scale-110 transition-transform" href="#contact"><span class="material-symbols-outlined">mail</span></a>
+</div>
+<div class="sticker bg-white cursor-pointer">EN</div>
+</nav>
+
+<main class="lg:ml-28 max-w-[1400px] mx-auto">
+<!-- Hero Section -->
+<section id="home">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-8">
+<div class="md:col-span-12 lg:col-span-9 brutalist-card brutalist-yellow p-8 md:p-12 relative overflow-hidden group">
+<div class="relative z-10">
+<div class="sticker mb-6">SQUAD LEADER • TECHNICAL LEADER</div>
+<h1 class="text-5xl md:text-7xl mb-6 leading-[0.9] tracking-tighter">
+                        BUILDING<br/>
+<span class="bg-black text-white px-2">SCALABLE SYSTEMS!</span>
+</h1>
+<div class="flex flex-wrap gap-4 mb-4">
+<div class="bg-white border-4 border-black p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+<span class="font-bold text-xs">CURRENT_ROLE:</span>
+<span class="font-black ml-2">SQUAD LEADER</span>
+</div>
+<div class="bg-white border-4 border-black p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+<span class="font-bold text-xs">STACK:</span>
+<span class="font-black ml-2">GO • RAILS • REACT</span>
+</div>
+</div>
+<p class="text-sm font-bold max-w-2xl">Seasoned Software Engineer with 9+ years building enterprise systems, leading teams, and architecting microservices across fintech, logistics, and hospitality sectors.</p>
+</div>
+<div class="absolute top-0 right-0 p-4 opacity-10 pointer-events-none text-9xl font-black">GO</div>
+</div>
+
+<div class="md:col-span-6 lg:col-span-3 brutalist-card p-8 flex flex-col items-center text-center">
+<div class="relative mb-6">
+<div class="w-40 h-40 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] bg-white overflow-hidden">
+<img alt="Erwin Hermanto" class="w-full h-full object-cover  contrast-125" src="https://media.licdn.com/dms/image/v2/D5603AQHiWrJL5ZyBnQ/profile-displayphoto-crop_800_800/B56ZtnPcdIJoAI-/0/1766963661281?e=1772064000&v=beta&t=aCKEdCwQTJjCav8wqSI4Feu9LRN1nSnxUbUnt8q0Kac"/>
+</div>
+</div>
+<h2 class="text-2xl mb-1">ERWIN HERMANTO</h2>
+<p class="font-bold border-b-4 border-black pb-4 mb-6 w-full italic">SOFTWARE ENGINEER</p>
+<div class="w-full space-y-2 text-left text-sm font-bold uppercase">
+<div class="flex justify-between border-b-2 border-black/10">
+<span>LOCATION:</span>
+<span>BANDUNG, ID</span>
+</div>
+<div class="flex justify-between border-b-2 border-black/10">
+<span>EXPERIENCE:</span>
+<span>9+ YEARS</span>
+</div>
+<div class="flex justify-between">
+<span>EDUCATION:</span>
+<span>B.SC CS</span>
+</div>
+</div>
+<div class="mt-8 flex justify-center gap-4">
+<a class="w-10 h-10 border-2 border-black flex items-center justify-center hover:bg-black hover:text-white transition-colors" href="https://erwinhermantodev.github.io" target="_blank"><span class="material-symbols-outlined !text-xl">public</span></a>
+<a class="w-10 h-10 border-2 border-black flex items-center justify-center hover:bg-black hover:text-white transition-colors" href="mailto:erwinhermantodev@gmail.com"><span class="material-symbols-outlined !text-xl">alternate_email</span></a>
+<a class="w-10 h-10 border-2 border-black flex items-center justify-center hover:bg-black hover:text-white transition-colors" href="https://www.linkedin.com/in/erwinhermantodev/" target="_blank"><span class="material-symbols-outlined !text-xl">person</span></a>
+</div>
+</div>
+
+<div class="md:col-span-6 lg:col-span-3 brutalist-card p-8 flex flex-col items-center justify-center">
+<div class="relative w-32 h-32 mb-6 border-8 border-black flex items-center justify-center bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+<span class="text-4xl font-black">80%</span>
+</div>
+<h3 class="text-xl mb-1">ENGLISH</h3>
+<p class="text-sm font-bold uppercase">PROFESSIONAL WORKING</p>
+</div>
+
+<div class="md:col-span-12 lg:col-span-6 brutalist-card p-8">
+<div class="flex items-center justify-between mb-10 border-b-4 border-black pb-4">
+<h2 class="text-3xl">CORE EXPERTISE</h2>
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="p-4 border-4 border-black bg-white hover:bg-[#FF00FF] hover:text-white transition-colors cursor-default">
+<span class="material-symbols-outlined mb-2 block">code</span>
+<h4 class="text-lg mb-2">BACKEND DEV</h4>
+<p class="text-xs font-bold leading-tight">GOLANG, RUBY ON RAILS, PHP LARAVEL</p>
+</div>
+<div class="p-4 border-4 border-black bg-white hover:bg-[#00FFFF] transition-colors cursor-default">
+<span class="material-symbols-outlined mb-2 block">api</span>
+<h4 class="text-lg mb-2">API & MICROSERVICES</h4>
+<p class="text-xs font-bold leading-tight">GRPC, REST API, API GATEWAY</p>
+</div>
+<div class="p-4 border-4 border-black bg-white hover:bg-[#00FF00] transition-colors cursor-default">
+<span class="material-symbols-outlined mb-2 block">groups</span>
+<h4 class="text-lg mb-2">LEADERSHIP</h4>
+<p class="text-xs font-bold leading-tight">TEAM MANAGEMENT, CODE REVIEW, MENTORING</p>
+</div>
+<div class="p-4 border-4 border-black bg-white hover:bg-yellow-300 transition-colors cursor-default">
+<span class="material-symbols-outlined mb-2 block">cloud</span>
+<h4 class="text-lg mb-2">CLOUD & DEVOPS</h4>
+<p class="text-xs font-bold leading-tight">GCP, DOCKER, CI/CD PIPELINES</p>
+</div>
+</div>
+</div>
+
+<div class="md:col-span-12 lg:col-span-3 brutalist-card p-8" id="skills">
+<h3 class="text-xl mb-8 border-b-4 border-black inline-block">TECH_STACK</h3>
+<div class="space-y-6">
+<div>
+<div class="flex justify-between font-bold text-sm mb-1">
+<span>GOLANG</span>
+<span>95%</span>
+</div>
+<div class="skill-bar-container">
+<div class="skill-bar-fill" style="width: 95%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-bold text-sm mb-1">
+<span>RUBY ON RAILS</span>
+<span>85%</span>
+</div>
+<div class="skill-bar-container">
+<div class="skill-bar-fill" style="width: 85%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-bold text-sm mb-1">
+<span>PHP/LARAVEL</span>
+<span>90%</span>
+</div>
+<div class="skill-bar-container">
+<div class="skill-bar-fill" style="width: 90%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-bold text-sm mb-1">
+<span>JAVASCRIPT</span>
+<span>80%</span>
+</div>
+<div class="skill-bar-container">
+<div class="skill-bar-fill" style="width: 80%"></div>
+</div>
+</div>
+</div>
+<div class="mt-10 flex flex-wrap gap-3">
+<span class="sticker">#DOCKER</span>
+<span class="sticker">#GCP</span>
+<span class="sticker">#GRPC</span>
+</div>
+</div>
+
+<div class="md:col-span-4 lg:col-span-3 brutalist-card brutalist-yellow p-8 flex flex-col items-center justify-center">
+<span class="text-8xl font-black mb-2 tracking-tighter">9+</span>
+<p class="text-lg font-black bg-black text-white px-2 py-1 text-center">YEARS EXPERIENCE</p>
+</div>
+
+<div class="md:col-span-4 lg:col-span-3 brutalist-card p-8 flex items-center gap-6">
+<div class="w-16 h-16 border-4 border-black bg-green-400 flex items-center justify-center shrink-0 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+<span class="material-symbols-outlined">military_tech</span>
+</div>
+<div>
+<h4 class="text-3xl">10+</h4>
+<p class="text-xs font-bold uppercase">COMPANIES SERVED</p>
+</div>
+</div>
+
+<div class="md:col-span-4 lg:col-span-3 brutalist-card p-8 flex items-center gap-6">
+<div class="w-16 h-16 border-4 border-black bg-blue-400 flex items-center justify-center shrink-0 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+<span class="material-symbols-outlined">terminal</span>
+</div>
+<div>
+<h4 class="text-3xl">150+</h4>
+<p class="text-xs font-bold uppercase">PROJECTS DELIVERED</p>
+</div>
+</div>
+
+<div class="md:col-span-12 lg:col-span-3 brutalist-card p-8 flex items-center justify-between bg-black text-white">
+<p class="text-[10px] font-bold uppercase">© 2025 ERWIN_H</p>
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 bg-green-500 border-2 border-white animate-pulse"></div>
+<span class="text-[10px] font-bold uppercase tracking-widest">AVAILABLE</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="mt-12">
+<div class="brutalist-card brutalist-yellow p-8 mb-8">
+<div class="flex items-center justify-between">
+<h2 class="text-4xl md:text-5xl">WORK EXPERIENCE</h2>
+<span class="material-symbols-outlined !text-5xl">work_history</span>
+</div>
+<p class="font-bold mt-4">FROM STARTUPS TO ENTERPRISE: BUILDING SCALABLE SOLUTIONS</p>
+</div>
+
+<div class="grid grid-cols-1 gap-6 mb-8">
+<!-- Current Role -->
+<div class="brutalist-card p-8 hover:bg-[#FFFF00] transition-colors border-l-8 border-l-green-500">
+<div class="flex flex-wrap items-start justify-between gap-4 mb-4">
+<div class="flex-1">
+<div class="flex items-center gap-3 mb-2">
+<span class="sticker bg-green-400">CURRENT</span>
+<h3 class="text-2xl">SQUAD LEADER</h3>
+</div>
+<p class="text-lg font-bold">PT. Elektronik Distribusi Otomatisasi Terkemuka</p>
+<p class="text-sm font-bold text-black/60">July 2025 - Present</p>
+</div>
+<span class="material-symbols-outlined !text-6xl opacity-20">groups</span>
+</div>
+<div class="border-t-4 border-black pt-4">
+<ul class="text-sm space-y-2">
+<li class="flex gap-2"><span class="font-black">→</span> <span>Collaborate closely with PM on product scope and technical requirements</span></li>
+<li class="flex gap-2"><span class="font-black">→</span> <span>Lead code review processes ensuring high-quality deliverables</span></li>
+<li class="flex gap-2"><span class="font-black">→</span> <span>Mentor engineers on best practices to enhance code quality</span></li>
+<li class="flex gap-2"><span class="font-black">→</span> <span>Manage task assignments and ensure 100% engineer utilization via Jira</span></li>
+<li class="flex gap-2"><span class="font-black">→</span> <span>Regular sync with management on project progress and deployment</span></li>
+</ul>
+</div>
+</div>
+
+<!-- Technical Leader -->
+<div class="brutalist-card p-8 hover:bg-[#00FFFF] transition-colors">
+<div class="flex flex-wrap items-start justify-between gap-4 mb-4">
+<div class="flex-1">
+<div class="flex items-center gap-3 mb-2">
+<span class="sticker bg-[#00FFFF]">2024-2025</span>
+<h3 class="text-2xl">TECHNICAL LEADER</h3>
+</div>
+<p class="text-lg font-bold">PT Pos Finansial Indonesia</p>
+<p class="text-sm font-bold text-black/60">April 2024 - July 2025 • 1 year 4 months</p>
+</div>
+<span class="material-symbols-outlined !text-6xl opacity-20">engineering</span>
+</div>
+<div class="grid md:grid-cols-2 gap-4 mb-4">
+<div class="flex flex-wrap gap-2">
+<span class="sticker project-tech">GOLANG</span>
+<span class="sticker project-tech">GRPC</span>
+<span class="sticker project-tech">REST API</span>
+<span class="sticker project-tech">GCP</span>
+<span class="sticker project-tech">CI/CD</span>
+</div>
+</div>
+<div class="border-t-4 border-black pt-4">
+<ul class="text-sm space-y-2">
+<li class="flex gap-2"><span class="font-black">→</span> <span>Built Golang API Gateway from scratch for fintech services</span></li>
+<li class="flex gap-2"><span class="font-black">→</span> <span>Architected microservices with GRPC and REST API</span></li>
+<li class="flex gap-2"><span class="font-black">→</span> <span>Established CI/CD pipelines for automated deployment</span></li>
+<li class="flex gap-2"><span class="font-black">→</span> <span>Integrated and configured Google Cloud Platform infrastructure</span></li>
+<li class="flex gap-2"><span class="font-black">→</span> <span>Developed Electronic Official Memo system with Go</span></li>
+</ul>
+</div>
+</div>
+
+<!-- Senior Fullstack Engineer -->
+<div class="brutalist-card p-8 hover:bg-[#FF00FF] transition-colors">
+<div class="flex flex-wrap items-start justify-between gap-4 mb-4">
+<div class="flex-1">
+<div class="flex items-center gap-3 mb-2">
+<span class="sticker bg-[#FF00FF]">2022-2024</span>
+<h3 class="text-2xl">SENIOR FULLSTACK ENGINEER</h3>
+</div>
+<p class="text-lg font-bold">Bobobox</p>
+<p class="text-sm font-bold text-black/60">December 2022 - February 2024 • 1 year 3 months</p>
+</div>
+<span class="material-symbols-outlined !text-6xl opacity-20">hotel</span>
+</div>
+<div class="grid md:grid-cols-2 gap-4 mb-4">
+<div class="flex flex-wrap gap-2">
+<span class="sticker project-tech">GOLANG</span>
+<span class="sticker project-tech">RUBY ON RAILS</span>
+<span class="sticker project-tech">NEXT.JS</span>
+<span class="sticker project-tech">DOCKER</span>
+<span class="sticker project-tech">TAURI</span>
+</div>
+</div>
+<div class="border-t-4 border-black pt-4">
+<ul class="text-sm space-y-2">
+<li class="flex gap-2"><span class="font-black">→</span> <span>Developed User Management System with Ruby on Rails</span></li>
+<li class="flex gap-2"><span class="font-black">→</span> <span>Built APIs for Frontdesk Management using Go and Rails</span></li>
+<li class="flex gap-2"><span class="font-black">→</span> <span>Containerized applications with Docker for deployment</span></li>
+<li class="flex gap-2"><span class="font-black">→</span> <span>Created desktop applications with Tauri and React.js</span></li>
+<li class="flex gap-2"><span class="font-black">→</span> <span>Developed Property and Device Management APIs</span></li>
+<li class="flex gap-2"><span class="font-black">→</span> <span>Built Device Management UI with Next.js integration</span></li>
+</ul>
+</div>
+</div>
+
+<!-- Backend Developer - SICEPAT -->
+<div class="brutalist-card p-8 hover:bg-[#00FF00] transition-colors">
+<div class="flex flex-wrap items-start justify-between gap-4 mb-4">
+<div class="flex-1">
+<div class="flex items-center gap-3 mb-2">
+<span class="sticker bg-[#00FF00]">2021-2022</span>
+<h3 class="text-2xl">BACKEND DEVELOPER</h3>
+</div>
+<p class="text-lg font-bold">SICEPAT Ekspres Indonesia</p>
+<p class="text-sm font-bold text-black/60">October 2021 - December 2022 • 1 year 3 months</p>
+</div>
+<span class="material-symbols-outlined !text-6xl opacity-20">local_shipping</span>
+</div>
+<div class="grid md:grid-cols-2 gap-4 mb-4">
+<div class="flex flex-wrap gap-2">
+<span class="sticker project-tech">GOLANG</span>
+<span class="sticker project-tech">NODE.JS</span>
+<span class="sticker project-tech">DOCKER</span>
+</div>
+</div>
+<div class="border-t-4 border-black pt-4">
+<ul class="text-sm space-y-2">
+<li class="flex gap-2"><span class="font-black">→</span> <span>Built and migrated Sort Machine API with Golang</span></li>
+<li class="flex gap-2"><span class="font-black">→</span> <span>Migrated services from Node.js to Golang for better performance</span></li>
+<li class="flex gap-2"><span class="font-black">→</span> <span>Containerized applications with Docker</span></li>
+</ul>
+</div>
+</div>
+
+<!-- Backend Developer - Qasir.id -->
+<div class="brutalist-card p-8 hover:bg-yellow-300 transition-colors">
+<div class="flex flex-wrap items-start justify-between gap-4 mb-4">
+<div class="flex-1">
+<div class="flex items-center gap-3 mb-2">
+<span class="sticker bg-yellow-300">2018-2021</span>
+<h3 class="text-2xl">BACKEND DEVELOPER</h3>
+</div>
+<p class="text-lg font-bold">Qasir.id</p>
+<p class="text-sm font-bold text-black/60">December 2018 - April 2021 • 2 years 5 months</p>
+</div>
+<span class="material-symbols-outlined !text-6xl opacity-20">point_of_sale</span>
+</div>
+<div class="grid md:grid-cols-2 gap-4 mb-4">
+<div class="flex flex-wrap gap-2">
+<span class="sticker project-tech">GOLANG</span>
+<span class="sticker project-tech">LARAVEL</span>
+<span class="sticker project-tech">REACT.JS</span>
+<span class="sticker project-tech">MONGODB</span>
+<span class="sticker project-tech">ELASTICSEARCH</span>
+</div>
+</div>
+<div class="border-t-4 border-black pt-4">
+<ul class="text-sm space-y-2">
+<li class="flex gap-2"><span class="font-black">→</span> <span>Developed APIs with Golang and Laravel for POS system</span></li>
+<li class="flex gap-2"><span class="font-black">→</span> <span>Integrated QRIS payment gateway with Golang</span></li>
+<li class="flex gap-2"><span class="font-black">→</span> <span>Implemented Elasticsearch for premium search features</span></li>
+<li class="flex gap-2"><span class="font-black">→</span> <span>Integrated with online food delivery platforms</span></li>
+<li class="flex gap-2"><span class="font-black">→</span> <span>Implemented Hexagonal Architecture pattern in Golang</span></li>
+<li class="flex gap-2"><span class="font-black">→</span> <span>Containerized applications with Docker</span></li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- Early Career Timeline -->
+<div class="brutalist-card p-8 bg-black text-white">
+<h3 class="text-2xl mb-6">EARLY CAREER (2015-2018)</h3>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="border-4 border-white p-4">
+<p class="text-xs font-black mb-2">2017-2018</p>
+<h4 class="text-lg mb-2">MEDIAWAVE INTERACTIVE</h4>
+<p class="text-xs">Backend Developer • Laravel API Development</p>
+</div>
+<div class="border-4 border-white p-4">
+<p class="text-xs font-black mb-2">2015-2016</p>
+<h4 class="text-lg mb-2">PT AXELINSIGHTS</h4>
+<p class="text-xs">Web Developer • Government Projects</p>
+</div>
+<div class="border-4 border-white p-4">
+<p class="text-xs font-black mb-2">2015</p>
+<h4 class="text-lg mb-2">PT CAKRA SYNTESIS</h4>
+<p class="text-xs">Web Developer • Banking Systems</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="mt-12">
+<div class="brutalist-card brutalist-yellow p-8 mb-8">
+<div class="flex items-center justify-between">
+<h2 class="text-4xl md:text-5xl">FEATURED PROJECTS</h2>
+<span class="material-symbols-outlined !text-5xl">folder_open</span>
+</div>
+<p class="font-bold mt-4">GOVERNMENT TO FINTECH: DIVERSE PORTFOLIO</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+<!-- API Gateway -->
+<div class="brutalist-card p-6 project-card hover:bg-[#00FFFF] transition-colors">
+<div class="flex items-start justify-between mb-4">
+<span class="material-symbols-outlined !text-4xl">hub</span>
+<span class="sticker bg-[#00FFFF]">2024</span>
+</div>
+<h3 class="text-xl mb-2">GOLANG API GATEWAY</h3>
+<p class="text-xs font-bold mb-4 leading-tight">Built from scratch for PT Pos Finansial Indonesia fintech services</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="sticker project-tech">Golang</span>
+<span class="sticker project-tech">GRPC</span>
+<span class="sticker project-tech">GCP</span>
+</div>
+<div class="border-t-4 border-black pt-4">
+<p class="text-xs font-bold uppercase">Role: Technical Leader</p>
+<p class="text-xs mt-2">• Microservices architecture<br/>• CI/CD implementation<br/>• Cloud infrastructure</p>
+</div>
+</div>
+
+<!-- Hospitality Management -->
+<div class="brutalist-card p-6 project-card hover:bg-[#FF00FF] transition-colors">
+<div class="flex items-start justify-between mb-4">
+<span class="material-symbols-outlined !text-4xl">apartment</span>
+<span class="sticker bg-[#FF00FF]">2023</span>
+</div>
+<h3 class="text-xl mb-2">PROPERTY MANAGEMENT SYSTEM</h3>
+<p class="text-xs font-bold mb-4 leading-tight">Complete management suite for Bobobox hospitality platform</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="sticker project-tech">Rails</span>
+<span class="sticker project-tech">Go</span>
+<span class="sticker project-tech">Next.js</span>
+</div>
+<div class="border-t-4 border-black pt-4">
+<p class="text-xs font-bold uppercase">Role: Senior Fullstack Engineer</p>
+<p class="text-xs mt-2">• User management<br/>• Device control<br/>• Desktop apps</p>
+</div>
+</div>
+
+<!-- Logistics System -->
+<div class="brutalist-card p-6 project-card hover:bg-[#00FF00] transition-colors">
+<div class="flex items-start justify-between mb-4">
+<span class="material-symbols-outlined !text-4xl">inventory_2</span>
+<span class="sticker bg-[#00FF00]">2022</span>
+</div>
+<h3 class="text-xl mb-2">SORT MACHINE API</h3>
+<p class="text-xs font-bold mb-4 leading-tight">High-performance logistics sorting system for SICEPAT</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="sticker project-tech">Golang</span>
+<span class="sticker project-tech">Docker</span>
+</div>
+<div class="border-t-4 border-black pt-4">
+<p class="text-xs font-bold uppercase">Role: Backend Developer</p>
+<p class="text-xs mt-2">• API migration<br/>• Performance optimization<br/>• Containerization</p>
+</div>
+</div>
+
+<!-- POS System -->
+<div class="brutalist-card p-6 project-card hover:bg-yellow-300 transition-colors">
+<div class="flex items-start justify-between mb-4">
+<span class="material-symbols-outlined !text-4xl">store</span>
+<span class="sticker bg-yellow-300">2020</span>
+</div>
+<h3 class="text-xl mb-2">QASIR POS PLATFORM</h3>
+<p class="text-xs font-bold mb-4 leading-tight">Point of sale system with payment integration and food delivery</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="sticker project-tech">Golang</span>
+<span class="sticker project-tech">Laravel</span>
+<span class="sticker project-tech">Elasticsearch</span>
+</div>
+<div class="border-t-4 border-black pt-4">
+<p class="text-xs font-bold uppercase">Role: Backend Developer</p>
+<p class="text-xs mt-2">• QRIS integration<br/>• Search optimization<br/>• Hexagonal architecture</p>
+</div>
+</div>
+
+<!-- Tourism Platform -->
+<div class="brutalist-card p-6 project-card hover:bg-[#FF00FF] transition-colors">
+<div class="flex items-start justify-between mb-4">
+<span class="material-symbols-outlined !text-4xl">flight</span>
+<span class="sticker bg-[#FF00FF]">2018</span>
+</div>
+<h3 class="text-xl mb-2">TOURISMWAVE</h3>
+<p class="text-xs font-bold mb-4 leading-tight">Travel booking platform for agents, flights & hotels</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="sticker project-tech">Laravel 5.4</span>
+<span class="sticker project-tech">API</span>
+</div>
+<div class="border-t-4 border-black pt-4">
+<p class="text-xs font-bold uppercase">Role: Backend Developer</p>
+<p class="text-xs mt-2">• RESTful API<br/>• Integration<br/>• Dashboard</p>
+</div>
+</div>
+
+<!-- Broadcasting License -->
+<div class="brutalist-card p-6 project-card hover:bg-[#00FFFF] transition-colors">
+<div class="flex items-start justify-between mb-4">
+<span class="material-symbols-outlined !text-4xl">broadcast_on_home</span>
+<span class="sticker bg-[#00FFFF]">2016</span>
+</div>
+<h3 class="text-xl mb-2">BROADCASTING LICENSE SYSTEM</h3>
+<p class="text-xs font-bold mb-4 leading-tight">Management system for TV & Radio licensing - KEMKOMINFO</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="sticker project-tech">Laravel 5.3</span>
+<span class="sticker project-tech">MySQL</span>
+</div>
+<div class="border-t-4 border-black pt-4">
+<p class="text-xs font-bold uppercase">Role: Web Developer</p>
+<p class="text-xs mt-2">• Business analysis<br/>• Database design<br/>• License flow</p>
+</div>
+</div>
+</div>
+
+<!-- Technologies Summary -->
+<div class="brutalist-card p-8 bg-black text-white">
+<h3 class="text-2xl mb-6">TECHNOLOGY EXPERTISE</h3>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+<div class="border-4 border-white p-4 text-center">
+<p class="font-black text-3xl mb-2">GO</p>
+<p class="text-xs uppercase">Primary Language</p>
+</div>
+<div class="border-4 border-white p-4 text-center">
+<p class="font-black text-3xl mb-2">RAILS</p>
+<p class="text-xs uppercase">Ruby Framework</p>
+</div>
+<div class="border-4 border-white p-4 text-center">
+<p class="font-black text-3xl mb-2">JS</p>
+<p class="text-xs uppercase">React • Next.js</p>
+</div>
+<div class="border-4 border-white p-4 text-center">
+<p class="font-black text-3xl mb-2">DB</p>
+<p class="text-xs uppercase">SQL • NoSQL</p>
+</div>
+<div class="border-4 border-white p-4 text-center">
+<p class="font-black text-3xl mb-2">OPS</p>
+<p class="text-xs uppercase">Docker • GCP</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Skills Detail -->
+<section class="mt-12">
+<div class="brutalist-card p-8 mb-8">
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-4xl">TECHNICAL SKILLS</h2>
+<span class="material-symbols-outlined !text-5xl">psychology</span>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Backend Languages -->
+<div class="border-4 border-black p-6 bg-white">
+<h4 class="text-lg mb-4 font-black border-b-4 border-black pb-2">LANGUAGES</h4>
+<div class="space-y-2 text-sm font-bold">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-green-500 border-2 border-black"></span>
+<span>Golang (Expert)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-green-500 border-2 border-black"></span>
+<span>Ruby on Rails (Advanced)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-green-500 border-2 border-black"></span>
+<span>PHP/Laravel (Expert)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-blue-500 border-2 border-black"></span>
+<span>JavaScript (Advanced)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-blue-500 border-2 border-black"></span>
+<span>Python (Intermediate)</span>
+</div>
+</div>
+</div>
+
+<!-- Frameworks & Tools -->
+<div class="border-4 border-black p-6 bg-white">
+<h4 class="text-lg mb-4 font-black border-b-4 border-black pb-2">FRAMEWORKS</h4>
+<div class="space-y-2 text-sm font-bold">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-green-500 border-2 border-black"></span>
+<span>GRPC & REST API</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-green-500 border-2 border-black"></span>
+<span>React.js & Next.js</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-green-500 border-2 border-black"></span>
+<span>Express.js</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-blue-500 border-2 border-black"></span>
+<span>Tauri (Desktop Apps)</span>
+</div>
+</div>
+</div>
+
+<!-- DevOps & Cloud -->
+<div class="border-4 border-black p-6 bg-white">
+<h4 class="text-lg mb-4 font-black border-b-4 border-black pb-2">DEVOPS & CLOUD</h4>
+<div class="space-y-2 text-sm font-bold">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-green-500 border-2 border-black"></span>
+<span>Docker Containerization</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-green-500 border-2 border-black"></span>
+<span>CI/CD Pipelines</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-green-500 border-2 border-black"></span>
+<span>Google Cloud Platform</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-blue-500 border-2 border-black"></span>
+<span>Message Queue Systems</span>
+</div>
+</div>
+</div>
+
+<!-- Database -->
+<div class="border-4 border-black p-6 bg-white">
+<h4 class="text-lg mb-4 font-black border-b-4 border-black pb-2">DATABASES</h4>
+<div class="space-y-2 text-sm font-bold">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-green-500 border-2 border-black"></span>
+<span>MySQL & PostgreSQL</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-green-500 border-2 border-black"></span>
+<span>MongoDB (NoSQL)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-blue-500 border-2 border-black"></span>
+<span>Elasticsearch</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-blue-500 border-2 border-black"></span>
+<span>Database Design</span>
+</div>
+</div>
+</div>
+
+<!-- Soft Skills -->
+<div class="border-4 border-black p-6 bg-white">
+<h4 class="text-lg mb-4 font-black border-b-4 border-black pb-2">LEADERSHIP</h4>
+<div class="space-y-2 text-sm font-bold">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-yellow-500 border-2 border-black"></span>
+<span>Team Management</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-yellow-500 border-2 border-black"></span>
+<span>Code Review</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-yellow-500 border-2 border-black"></span>
+<span>Mentoring</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-yellow-500 border-2 border-black"></span>
+<span>Agile/Scrum</span>
+</div>
+</div>
+</div>
+
+<!-- Architecture -->
+<div class="border-4 border-black p-6 bg-white">
+<h4 class="text-lg mb-4 font-black border-b-4 border-black pb-2">ARCHITECTURE</h4>
+<div class="space-y-2 text-sm font-bold">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-green-500 border-2 border-black"></span>
+<span>Microservices</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-green-500 border-2 border-black"></span>
+<span>Hexagonal Architecture</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-green-500 border-2 border-black"></span>
+<span>API Design</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-blue-500 border-2 border-black"></span>
+<span>System Integration</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Education & Certifications -->
+<section class="mt-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="brutalist-card p-8">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined !text-5xl">school</span>
+<div>
+<h3 class="text-2xl">EDUCATION</h3>
+<p class="text-sm font-bold">Academic Foundation</p>
+</div>
+</div>
+<div class="border-4 border-black p-6 bg-white">
+<h4 class="text-lg font-black mb-2">Bachelor of Science in Computer Science</h4>
+<p class="text-sm font-bold mb-1">STMIK Bandung</p>
+<p class="text-xs font-bold text-black/60">Graduated: 2015</p>
+<div class="mt-4 flex items-center gap-2">
+<span class="sticker bg-yellow-300">Technopreneur Student 2015</span>
+</div>
+</div>
+</div>
+
+<div class="brutalist-card p-8">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined !text-5xl">verified</span>
+<div>
+<h3 class="text-2xl">ACHIEVEMENTS</h3>
+<p class="text-sm font-bold">Leadership & Community</p>
+</div>
+</div>
+<div class="space-y-4">
+<div class="border-4 border-black p-4 bg-white">
+<p class="text-sm font-black mb-1">Leader - Executive Board</p>
+<p class="text-xs font-bold">STMIK Bandung Student Organization</p>
+<p class="text-xs text-black/60">2014 - 2015</p>
+</div>
+<div class="border-4 border-black p-4 bg-white">
+<p class="text-sm font-black mb-1">Member - Executive Board</p>
+<p class="text-xs font-bold">STMIK Bandung Student Organization</p>
+<p class="text-xs text-black/60">2013 - 2014</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section class="mt-12" id="contact">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+<div class="brutalist-card brutalist-yellow p-6 text-center">
+<span class="material-symbols-outlined !text-5xl mb-2">currency_exchange</span>
+<h4 class="text-sm font-black">FINTECH</h4>
+<p class="text-xs mt-2">PT Pos Finansial Indonesia</p>
+</div>
+<div class="brutalist-card brutalist-yellow p-6 text-center">
+<span class="material-symbols-outlined !text-5xl mb-2">hotel</span>
+<h4 class="text-sm font-black">HOSPITALITY</h4>
+<p class="text-xs mt-2">Bobobox</p>
+</div>
+<div class="brutalist-card brutalist-yellow p-6 text-center">
+<span class="material-symbols-outlined !text-5xl mb-2">local_shipping</span>
+<h4 class="text-sm font-black">LOGISTICS</h4>
+<p class="text-xs mt-2">SICEPAT Ekspres</p>
+</div>
+<div class="brutalist-card brutalist-yellow p-6 text-center">
+<span class="material-symbols-outlined !text-5xl mb-2">account_balance</span>
+<h4 class="text-sm font-black">GOVERNMENT</h4>
+<p class="text-xs mt-2">Ministry Projects</p>
+</div>
+</div>
+
+<!-- Contact CTA -->
+<div class="brutalist-card bg-black text-white p-12 text-center">
+<h2 class="text-4xl md:text-6xl mb-6">LET'S BUILD TOGETHER</h2>
+<p class="text-xl font-bold mb-8">READY TO LEAD YOUR NEXT PROJECT</p>
+<div class="flex flex-wrap gap-4 justify-center mb-8">
+<a href="mailto:erwinhermantodev@gmail.com" class="brutalist-card bg-[#FFFF00] text-black px-8 py-4 font-black hover:transform hover:translate-x-1 hover:translate-y-1 flex items-center gap-2">
+<span class="material-symbols-outlined">mail</span>
+<span>EMAIL ME</span>
+</a>
+<a href="https://www.linkedin.com/in/erwinhermantodev/" target="_blank" class="border-4 border-white px-8 py-4 font-black hover:bg-white hover:text-black transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined">person</span>
+<span>LINKEDIN</span>
+</a>
+<a href="https://erwinhermantodev.github.io" target="_blank" class="border-4 border-white px-8 py-4 font-black hover:bg-white hover:text-black transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined">public</span>
+<span>PORTFOLIO</span>
+</a>
+</div>
+<div class="flex flex-wrap gap-3 justify-center text-sm">
+<span class="sticker">#GOLANG</span>
+<span class="sticker">#RAILS</span>
+<span class="sticker">#LEADERSHIP</span>
+<span class="sticker">#MICROSERVICES</span>
+<span class="sticker">#DEVOPS</span>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="brutalist-card p-6">
+<h4 class="text-lg mb-4 font-black">EXPERTISE</h4>
+<p class="text-xs leading-relaxed">Squad Leader & Technical Leader with 9+ years architecting scalable backend systems, leading engineering teams, and delivering enterprise solutions across multiple industries.</p>
+</div>
+<div class="brutalist-card p-6">
+<h4 class="text-lg mb-4 font-black">APPROACH</h4>
+<p class="text-xs leading-relaxed">Microservices architecture, clean code principles, team mentorship, and business-focused engineering from analysis to production deployment.</p>
+</div>
+<div class="brutalist-card p-6 bg-black text-white">
+<p class="text-xs font-bold uppercase mb-2">© 2025 ERWIN HERMANTO</p>
+<p class="text-xs mb-4">erwinhermantodev@gmail.com</p>
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 bg-green-500 border-2 border-white animate-pulse"></div>
+<span class="text-xs font-bold uppercase">OPEN TO OPPORTUNITIES</span>
+</div>
+</div>
+</div>
+</main>
+
+<!-- Mobile Navigation -->
+<div class="fixed bottom-4 left-4 right-4 h-20 brutalist-card brutalist-yellow flex items-center justify-around lg:hidden z-50">
+<a href="#home"><span class="material-symbols-outlined">home</span></a>
+<a href="#experience"><span class="material-symbols-outlined">work</span></a>
+<a href="#projects"><span class="material-symbols-outlined">grid_view</span></a>
+<a href="#skills"><span class="material-symbols-outlined">construction</span></a>
+<a href="#contact"><span class="material-symbols-outlined">mail</span></a>
+</div>
+
+</body></html>
