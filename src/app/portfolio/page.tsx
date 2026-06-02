@@ -309,8 +309,12 @@ export default function PortfolioPage() {
                           rel="noopener noreferrer"
                           className="brutalist-card bg-black text-white hover:bg-white hover:text-black p-2.5 font-black text-[10px] uppercase text-center block transition-colors flex items-center justify-center gap-1.5"
                         >
-                          <span className="material-symbols-outlined !text-sm">open_in_new</span>
-                          <span>View Original Scan</span>
+                          <span className="material-symbols-outlined !text-sm">
+                            {project.originalSheet.startsWith("http") ? "language" : "open_in_new"}
+                          </span>
+                          <span>
+                            {project.originalSheet.startsWith("http") ? "Visit Website" : "View Original Scan"}
+                          </span>
                         </a>
                       </div>
                     )}

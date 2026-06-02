@@ -29,6 +29,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${archivoBlack.variable} ${spaceMono.variable} scroll-smooth`}
+      data-scroll-behavior="smooth"
     >
       <head>
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}

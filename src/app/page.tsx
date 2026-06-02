@@ -39,6 +39,9 @@ export default function Home() {
             <a className="hover:scale-110 transition-transform" href="#contact">
               <span className="material-symbols-outlined">mail</span>
             </a>
+            <a className="hover:scale-110 transition-transform" href="/portfolio" title="Detailed IT Portfolio">
+              <span className="material-symbols-outlined">folder_open</span>
+            </a>
           </div>
           <div className="sticker bg-black dark:bg-white text-white dark:text-black cursor-pointer">EN</div>
         </nav>
@@ -1106,6 +1109,9 @@ export default function Home() {
         </a>
         <a href="#contact">
           <span className="material-symbols-outlined text-black dark:text-white">mail</span>
+        </a>
+        <a href="/portfolio" title="Detailed IT Portfolio">
+          <span className="material-symbols-outlined text-black dark:text-white">folder_open</span>
         </a>
       </div>
     </>
