@@ -301,7 +301,7 @@ export default function PortfolioPage() {
                       <span className="text-[9px] uppercase opacity-60 block">CLIENT</span>
                       <span className="font-black text-xs uppercase mt-0.5 block">{project.client}</span>
                     </div>
-                    {project.originalSheet && (
+                    {project.originalSheet && project.originalSheet !== "#" && (
                       <div className="pt-3 border-t border-black/10">
                         <a
                           href={project.originalSheet}
