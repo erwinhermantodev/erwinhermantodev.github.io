@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
@@ -721,6 +722,17 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+            </div>
+
+            {/* View More IT Projects Link */}
+            <div className="flex justify-center mt-6">
+              <Link
+                href="/portfolio"
+                className="brutalist-card bg-black text-white hover:bg-white hover:text-black px-8 py-4 font-black text-sm uppercase tracking-wider flex items-center gap-3 transition-all"
+              >
+                <span>View Detailed IT Project Experience</span>
+                <span className="material-symbols-outlined !text-lg">arrow_forward</span>
+              </Link>
             </div>
 
             {/* Technology Summary List */}

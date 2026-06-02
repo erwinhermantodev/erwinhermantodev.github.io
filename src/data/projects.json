@@ -1,0 +1,287 @@
+[
+  {
+    "id": "1",
+    "name": "Manajemen Organisasi Puskesmas Jakarta Timur",
+    "description": "Hospital organization management website-based application that provides the management of the hospital in East Jakarta, financial applications, SMS gateway for the data community health center services, and patient data management.",
+    "period": {
+      "start": "November-2015",
+      "end": "Feb-2016"
+    },
+    "company": "PT Inovasi Tritek Informasi",
+    "client": "Ministry of Health",
+    "role": "Web Programmer",
+    "programmingLanguage": "Php Framework Codeigniter 2",
+    "database": "Mysql Phpmyadmin",
+    "tools": ["XAMPP", "Sublime Text", "Source Tree", "Navicat", "Trello"],
+    "assignments": [
+      "Create master data modules"
+    ],
+    "team": [
+      "1 IT Project Manager",
+      "1 IT Analyst",
+      "1 Software Tester",
+      "3 Programmer"
+    ],
+    "images": [
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780371751/portfolio/image_Pippit_202606021041_dvw31t.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780371751/portfolio/image_Pippit_202606021041_2_cin9z9.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780371750/portfolio/image_Pippit_202606021041_1_ahzm6w.png"
+    ],
+    "originalSheet": "/img/experience_1.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Analysis Development Unit Price",
+    "description": "This application contains the price of building materials and labor price of existing buildings throughout Indonesia that are tailored to different prices in each province.",
+    "period": {
+      "start": "Feb-2015",
+      "end": "April-2016"
+    },
+    "company": "PT Axelinsights",
+    "client": "Center for Research of housing and public works ministry settlements",
+    "role": "Front End Developer",
+    "programmingLanguage": "Php Framework Codeigniter 2",
+    "database": "Mysql Phpmyadmin",
+    "tools": ["XAMPP", "Sublime Text", "Source Tree", "Navicat", "Trello"],
+    "assignments": [
+      "Make an appearance on the application"
+    ],
+    "team": [
+      "1 IT Project Manager",
+      "1 IT Analyst",
+      "1 Software Tester",
+      "2 Programmer"
+    ],
+    "images": [
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780372803/portfolio/image_Pippit_202606021049_i4qe00.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780372209/portfolio/image_Pippit_202606021049_1_vcvibv.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780372212/portfolio/image_Pippit_202606021049_2_bhrmod.png"
+    ],
+    "originalSheet": "/img/experience_2.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Public Fire Information System",
+    "description": "This system contains information fires throughout Indonesia which is presented in the form of maps that contain the coordinates of the fire using geo server and also lists fire data in table form.",
+    "period": {
+      "start": "December-2015",
+      "end": "Feb-2016"
+    },
+    "company": "PT Axelinsights",
+    "client": "Center for Research of housing and public works ministry settlements",
+    "role": "Web Developer",
+    "programmingLanguage": "Php Framework Codeigniter 2",
+    "database": "Mysql Phpmyadmin",
+    "tools": ["XAMPP", "Sublime Text", "Source Tree", "Navicat", "Trello"],
+    "assignments": [
+      "Make a list of fire data that exist throughout Indonesia in the form of a table list",
+      "Make a list of fire data that exist throughout Indonesia in the form of map that shows the location coordinates of fires"
+    ],
+    "team": [
+      "1 IT Project Manager",
+      "1 IT Analyst",
+      "1 Software Tester",
+      "1 Programmer"
+    ],
+    "images": [
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780374621/portfolio/image_Pippit_202606021130_ahgmwd.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780374622/portfolio/image_Pippit_202606021130_1_prb7ce.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780374620/portfolio/image_Pippit_202606021130_2_qgr2v0.png"
+    ],
+    "originalSheet": "/img/experience_3.jpg"
+  },
+  {
+    "id": "4",
+    "name": "SOP Management / Document Management System",
+    "description": "The document management system application that is used to manage documents in the company mainly S.O.P or standard operating procedures, applied, there are modules to create the document or send the document to kepegawai or part of the company untuklangsung S.O.P read her sent to the relevant.",
+    "period": {
+      "start": "January-2016",
+      "end": "May-2016"
+    },
+    "company": "PT Axelinsights",
+    "client": "PT Aganza International",
+    "role": "Web Developer",
+    "programmingLanguage": "Php Framework Codeigniter 3",
+    "database": "Mysql Phpmyadmin",
+    "tools": ["XAMPP", "Sublime Text", "Source Tree", "Navicat", "Trello"],
+    "assignments": [
+      "create a module for user management",
+      "make access to shipping documents"
+    ],
+    "team": [
+      "1 IT Project Manager",
+      "1 IT Analyst",
+      "1 Software Tester",
+      "1 Programmer"
+    ],
+    "images": [
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780375497/portfolio/image_Pippit_202606021144_mvzdug.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780375495/portfolio/image_Pippit_202606021144_1_rvzcpv.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780375495/portfolio/image_Pippit_202606021144_2_eoskqm.png"
+    ],
+    "originalSheet": "/img/experience_4.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Management Information Systems Licensing Broadcasting / SIMP3 KOMINFO",
+    "description": "Management information system of broadcast licensing is used to open up business opportunities for entrepreneurs who want to make the permission of broadcasters both television and radio, in this system there are three important features that permits for new applicants, license extensions and changes to the data.",
+    "period": {
+      "start": "April-2016",
+      "end": "Oktober-2016"
+    },
+    "company": "PT Axelinsights and PT Tritech Consult Indonesia",
+    "client": "KEMKOMINFO RI",
+    "role": "Web Developer",
+    "programmingLanguage": "Php Framework Codeigniter 3",
+    "database": "Mysql Phpmyadmin",
+    "tools": ["XAMPP", "Sublime Text", "Source Tree", "Navicat", "Trello"],
+    "assignments": [
+      "make almost all applications, especially related to the business of the licensing process",
+      "Make database",
+      "Proses Business analysis"
+    ],
+    "team": [
+      "1 IT Project Manager",
+      "1 IT Analyst",
+      "1 Software Tester",
+      "2 Programmer"
+    ],
+    "images": [
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780375985/portfolio/image_Pippit_202606021152_y3fqvj.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780375983/portfolio/image_Pippit_202606021152_1_pv27nd.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780375984/portfolio/image_Pippit_202606021152_2_ws3kja.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780375983/portfolio/image_Pippit_202606021152_3_czjurn.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780375982/portfolio/image_Pippit_202606021152_4_d4ntdb.png"
+    ],
+    "originalSheet": "/img/experience_5.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Sistem Kerja Audit Internal",
+    "description": "This application helps in BJB Syariah Bank audit process, from the examination process the paperwork until the budget plan.",
+    "period": {
+      "start": "November-2016",
+      "end": "Januari-2017"
+    },
+    "company": "PT Cakra Syntesis Indonesia",
+    "client": "Bank BJBSyariah",
+    "role": "Main Web Developer",
+    "programmingLanguage": "Php Framework Laravel 5.3",
+    "database": "PgSql",
+    "tools": ["XAMPP", "Sublime Text", "Source Tree", "Navicat", "Trello"],
+    "assignments": [
+      "make almost all applications, especially related to the business of the licensing process",
+      "Make database",
+      "Proses Business analysis"
+    ],
+    "team": [
+      "1 IT Project Manager",
+      "1 IT Analyst",
+      "1 Software Tester",
+      "2 Programmer"
+    ],
+    "images": [
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780378401/portfolio/image_Pippit_202606021232_tb3zip.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780378391/portfolio/image_Pippit_202606021232_3_jzewxo.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780378393/portfolio/image_Pippit_202606021232_1_w5shrj.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780378391/portfolio/image_Pippit_202606021232_2_rb3pup.png"
+    ],
+    "originalSheet": "/img/experience_6.jpg"
+  },
+  {
+    "id": "8",
+    "name": "TourismWave",
+    "description": "This Application form book travel agent , flight , and hotel",
+    "period": {
+      "start": "Juni-2017",
+      "end": "Mei-2018"
+    },
+    "company": "PT Mediawave Interactive",
+    "client": "",
+    "role": "Back-end + Front-end Developer",
+    "programmingLanguage": "Php Framework Laravel 5.4",
+    "database": "MySql",
+    "tools": ["XAMPP", "Sublime Text", "Source Tree", "Navicat", "Trello", "Git"],
+    "assignments": [
+      "Make API",
+      "API Integration back end to front end",
+      "Make module dashboard"
+    ],
+    "team": [
+      "2 Front-end Web Developer",
+      "2 Back-end Web Developer",
+      "1 Data Analyst",
+      "1 Socmed Analyst"
+    ],
+    "images": [
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780379528/portfolio/image_Pippit_202606021239_sqqysp.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780378814/portfolio/image_Pippit_202606021239_1_h9xost.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780378823/portfolio/image_Pippit_202606021239_3_beowcl.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780378814/portfolio/image_Pippit_202606021239_2_ssyifr.png"
+    ],
+    "originalSheet": "/img/experience_8.jpg"
+  },
+  {
+    "id": "9",
+    "name": "Maduraunitedfc.com",
+    "description": "Website information for Madura United Fc and Online shop Merchandise and CMS .",
+    "period": {
+      "start": "April-2018",
+      "end": "Agustus-2018"
+    },
+    "company": "-",
+    "client": "Madura United Fc",
+    "role": "Back-end + Front-end Developer",
+    "programmingLanguage": "Php Framework Laravel 5.6",
+    "database": "MySql",
+    "tools": ["Linux", "XAMPP", "Visual Studio Code", "Source Tree", "Navicat", "Trello", "Git"],
+    "assignments": [
+      "Make API",
+      "API Integration back end to front end",
+      "Make module dashboard",
+      "Make Front end"
+    ],
+    "team": [
+      "1 Front-end Web Developer",
+      "1 Back-end Web Developer",
+      "1 UI/UX Designer"
+    ],
+    "images": [
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780379544/portfolio/image_Pippit_202606021251_p2ecpb.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780379545/portfolio/image_Pippit_202606021251_1_bohnzu.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780379551/portfolio/image_Pippit_202606021251_4_hebkgw.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780379541/portfolio/image_Pippit_202606021251_3_txxxg1.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780379540/portfolio/image_Pippit_202606021251_2_ur0qcd.png"
+    ],
+    "originalSheet": "/img/experience_9.jpg"
+  },
+  {
+    "id": "10",
+    "name": "Kechally",
+    "description": "Premium Handmade Mukena, Crafted By the Locals.",
+    "period": {
+      "start": "Mei-2026",
+      "end": "Juni-2026"
+    },
+    "company": "-",
+    "client": "Kechally",
+    "role": "Fullstack Developer",
+    "programmingLanguage": "Next Js",
+    "database": "Supabase",
+    "tools": ["Linux", "Visual Studio Code", "Source Tree", "Trello", "Git"],
+    "assignments": [
+      "Make UI",
+      "Make UX",
+      "Make Fullstack"
+    ],
+    "images": [
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780380742/portfolio/Screenshot_2026-06-02_at_13.09.57_qbrecg.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780380742/portfolio/Screenshot_2026-06-02_at_13.10.26_zlnjsu.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780380742/portfolio/Screenshot_2026-06-02_at_13.10.08_cednd5.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780380742/portfolio/Screenshot_2026-06-02_at_13.11.42_b6ifqx.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780380741/portfolio/Screenshot_2026-06-02_at_13.10.43_j0udfd.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780380741/portfolio/Screenshot_2026-06-02_at_13.11.59_toyjun.png"
+    ],
+    "originalSheet": "/img/experience_9.jpg"
+  }
+]
