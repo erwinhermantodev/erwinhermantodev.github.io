@@ -124,7 +124,7 @@ export default function Home() {
             </div>
 
             <div className="brutalist-card p-4 flex flex-col items-center justify-center text-center col-span-2">
-              <span className="text-4xl font-black mb-1 tracking-tighter">150+</span>
+              <span className="text-4xl font-black mb-1 tracking-tighter">15+</span>
               <p className="text-[10px] font-black bg-black dark:bg-white text-white dark:text-black px-2 py-0.5 uppercase">
                 PROJECTS DELIVERED
               </p>
