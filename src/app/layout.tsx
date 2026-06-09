@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "Erwin Hermanto | Software Engineer Portfolio",
   description: "Seasoned Software Engineer with 9+ years building enterprise systems, leading teams, and architecting microservices across fintech, logistics, and hospitality sectors.",
   keywords: ["Erwin Hermanto", "Software Engineer", "Squad Leader", "Technical Leader", "Golang", "Ruby on Rails", "React", "Portfolio"],
+  other: {
+    "facebook-domain-verification": "9dh8panjvmczfcbtcfcir9hu5qt941",
+  },
 };
 
 export default function RootLayout({
