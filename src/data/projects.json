@@ -283,5 +283,30 @@
       "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1780380741/portfolio/Screenshot_2026-06-02_at_13.11.59_toyjun.png"
     ],
     "originalSheet": "https://kechally.com"
+  },
+  {
+    "id": "11",
+    "name": "Redja Wisata",
+    "description": "Melayani Perjalanan Sejak 2003.",
+    "period": {
+      "start": "Juli-2026",
+      "end": "Agustus-2026"
+    },
+    "company": "-",
+    "client": "Redja Wisata",
+    "role": "Fullstack Developer",
+    "programmingLanguage": "Next Js",
+    "database": "Supabase",
+    "tools": ["Linux", "Visual Studio Code", "Source Tree", "Trello", "Git"],
+    "assignments": [
+      "Make UI",
+      "Make UX",
+      "Make Fullstack"
+    ],
+    "images": [
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1787013355/portfolio/Screenshot_2026-08-18_at_07.34.39_be5pkc.png",
+      "https://res.cloudinary.com/karyalaza-indonesia/image/upload/v1787013354/portfolio/Screenshot_2026-08-18_at_07.35.35_ginjog.png"
+    ],
+    "originalSheet": "https://redjawisata.com"
   }
 ]
